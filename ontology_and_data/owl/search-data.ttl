@@ -1,0 +1,54 @@
+# baseURI: http://schema.fanniemae.com/search/example
+# imports: http://www.w3.org/2004/02/skos/core
+
+@prefix :        <http://schema.fanniemae.com/search/example> .
+@prefix search:  <http://schema.pearson.com/ns/search#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+
+
+<http://data.fanniemae.com/search/searchterm/s-00001#this> 
+	a search:SearchTerm ;
+	skos:prefLabel "products" .
+	  
+<http://data.fanniemae.com/question/q-00001#this>
+     a search:Question ;
+     search:isPartOf <http://data.fanniemae.com/search/searchterm/s-00001#this> ;
+     skos:prefLabel "What is product?" .
+	 
+<http://data.fanniemae.com/question/q-00002#this>
+     a search:Question ;
+     search:isPartOf <http://data.fanniemae.com/search/searchterm/s-00001#this> ;
+     skos:prefLabel "What is FN30?" .
+	 
+<http://data.fanniemae.com/question/q-00003#this>
+     a search:Question ;
+     search:isPartOf <http://data.fanniemae.com/search/searchterm/s-00001#this> ;
+     skos:prefLabel "What is FN15?" .
+
+	 
+<http://data.fanniemae.com/question/q-00006#this>
+     a search:Question ;
+     search:isPartOf <http://data.fanniemae.com/search/searchterm/s-00001#this> ;
+     skos:prefLabel "What is G230?" .
+	 
+<http://data.fanniemae.com/search/searchterm/s-00002#this> 
+	a search:SearchTerm ;
+	skos:prefLabel "settlement" .
+	
+<http://data.fanniemae.com/search/searchterm/s-00003#this> 
+	a search:SearchTerm ;
+	skos:prefLabel "settlement date" .
+	
+<http://data.fanniemae.com/question/q-00004#this>
+     a search:Question ;
+     search:isPartOf <http://data.fanniemae.com/search/searchterm/s-00002#this> ;
+     skos:prefLabel "What is settlement date?" .
+	 
+<http://data.fanniemae.com/question/q-00005#this>
+     a search:Question ;
+     search:isPartOf <http://data.fanniemae.com/search/searchterm/s-00002#this> ;
+     skos:prefLabel "What is settlement date of FN30?" .
