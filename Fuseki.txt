@@ -1,0 +1,30 @@
+E:\fuseki\apache-jena-fuseki-3.8.0
+
+java -Xmx1200M -jar fuseki-server.jar --update --loc=data /vca
+
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd:  <http://www.w3.org/2001/XMLSchema#>
+
+ 
+
+SELECT ?question ?p ?searchterm
+WHERE {
+  ?q ?p ?search.
+  ?q  skos:prefLabel ?question .
+  ?search skos:prefLabel  ?searchterm.
+  FILTER (?searchterm = "settlement date")
+}
+
+ 
+
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd:  <http://www.w3.org/2001/XMLSchema#>
+
+
+SELECT ?question ?p ?searchterm
+WHERE {
+  ?q ?p ?search.
+  ?q  skos:prefLabel ?question .
+  ?search skos:prefLabel  ?searchterm.
+  filter (regex  ( ?searchterm , "products"))
+}

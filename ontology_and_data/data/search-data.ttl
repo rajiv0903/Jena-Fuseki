@@ -10,45 +10,54 @@
 @prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
 
 
-<http://data.fanniemae.com/search/searchterm/s-00001#this> 
+<http://data.fanniemae.com/search/searchterm/products#this> 
 	a search:SearchTerm ;
 	skos:prefLabel "products" .
 	  
-<http://data.fanniemae.com/question/q-00001#this>
+<http://data.fanniemae.com/question/what_is_product#this>
      a search:Question ;
-     search:isPartOf <http://data.fanniemae.com/search/searchterm/s-00001#this> ;
+     search:isPartOf <http://data.fanniemae.com/search/searchterm/products#this> ;
      skos:prefLabel "What is product?" .
 	 
-<http://data.fanniemae.com/question/q-00002#this>
+<http://data.fanniemae.com/question/what_is_fn30#this>
      a search:Question ;
-     search:isPartOf <http://data.fanniemae.com/search/searchterm/s-00001#this> ;
+     search:isPartOf <http://data.fanniemae.com/search/searchterm/products#this> ;
      skos:prefLabel "What is FN30?" .
 	 
-<http://data.fanniemae.com/question/q-00003#this>
+<http://data.fanniemae.com/question/what_is_fn15#this>
      a search:Question ;
-     search:isPartOf <http://data.fanniemae.com/search/searchterm/s-00001#this> ;
+     search:isPartOf <http://data.fanniemae.com/search/searchterm/products#this> ;
      skos:prefLabel "What is FN15?" .
 
 	 
-<http://data.fanniemae.com/question/q-00006#this>
+<http://data.fanniemae.com/question/what_is_g230#this>
      a search:Question ;
-     search:isPartOf <http://data.fanniemae.com/search/searchterm/s-00001#this> ;
+     search:isPartOf <http://data.fanniemae.com/search/searchterm/products#this> ;
      skos:prefLabel "What is G230?" .
 	 
-<http://data.fanniemae.com/search/searchterm/s-00002#this> 
+<http://data.fanniemae.com/search/searchterm/settlement#this> 
 	a search:SearchTerm ;
 	skos:prefLabel "settlement" .
 	
-<http://data.fanniemae.com/search/searchterm/s-00003#this> 
-	a search:SearchTerm ;
-	skos:prefLabel "settlement date" .
 	
-<http://data.fanniemae.com/question/q-00004#this>
+<http://data.fanniemae.com/question/what_is_settlement_date#this>
      a search:Question ;
-     search:isPartOf <http://data.fanniemae.com/search/searchterm/s-00002#this> ;
+     search:isPartOf <http://data.fanniemae.com/search/searchterm/settlement#this> ;
      skos:prefLabel "What is settlement date?" .
 	 
-<http://data.fanniemae.com/question/q-00005#this>
+<http://data.fanniemae.com/question/what_is_settlement_date_of_fn30#this>
      a search:Question ;
-     search:isPartOf <http://data.fanniemae.com/search/searchterm/s-00002#this> ;
+     search:isPartOf <http://data.fanniemae.com/search/searchterm/settlement#this> ;
      skos:prefLabel "What is settlement date of FN30?" .
+	 
+
+<http://data.fanniemae.com/search/searchterm/coupon#this> 
+	a search:SearchTerm ;
+	skos:prefLabel "coupon" .
+	
+<http://data.fanniemae.com/question/what_is_coupon#this>
+     a search:Question ;
+     search:isPartOf <http://data.fanniemae.com/search/searchterm/coupon#this> ;
+     skos:prefLabel "What is coupon?" .
+	
+	
